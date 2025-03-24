@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Journey of Fire and Fate</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="mega-title">
+          <div class="title-glow"></div>
+          <span class="title-text">Journey of Fire and Fate</span>
+        </div>
+        <div class="subtitle">An Interactive Tale of Panchaali's Destiny</div>
+        <div
+          style="
+            text-align: center;
+            font-size: 1.6rem;
+            margin-bottom: 20px;
+            color: #d4a76a;
+            font-style: italic;
+            line-height: 1.2;
+          "
+        >
+          Based on the novel by Chitra Banerjee Divakaruni
+        </div>
+      </header>
+
+      <div class="intro-section">
+        <div class="intro-content">
+          <h2>Welcome to Panchaali's World</h2>
+          <p>
+            Step into the epic tale of the Mahabharata through the eyes of
+            Draupadi, the enigmatic queen of the Pandavas. In this interactive
+            journey, you'll experience the palace of illusions, where every
+            choice shapes your destiny.
+          </p>
+          <p>
+            As Panchaali, you'll navigate through love, betrayal, and the weight
+            of destiny. Your decisions will influence your traits:
+          </p>
+          <div class="trait-intro">
+            <div class="trait-item">
+              <span class="trait-icon">🔥</span>
+              <span class="trait-name">Fire</span>
+              <span class="trait-desc">Your passion and determination</span>
+            </div>
+            <div class="trait-item">
+              <span class="trait-icon">💡</span>
+              <span class="trait-name">Wisdom</span>
+              <span class="trait-desc">Your strategic thinking</span>
+            </div>
+            <div class="trait-item">
+              <span class="trait-icon">❤️</span>
+              <span class="trait-name">Heart</span>
+              <span class="trait-desc">Your emotional depth</span>
+            </div>
+          </div>
+          <button id="start-game" class="start-game-btn">
+            Begin Your Journey
+          </button>
+        </div>
+      </div>
+
+      <div class="game-container" style="display: none">
+        <img id="scene-image" class="scene-image" src="" alt="Scene Image" />
+        <div id="scene-text" class="scene-text"></div>
+        <div id="scene-quote" class="scene-quote"></div>
+
+        <div class="decisions-header">
+          <div class="decisions-title">Your Choices</div>
+          <button id="toggle-history" class="toggle-history">
+            View Journey History
+          </button>
+        </div>
+
+        <div id="choices" class="choices"></div>
+        <div id="outcome" class="outcome" style="display: none"></div>
+
+        <div
+          id="history-panel"
+          class="history-panel"
+          style="display: none"
+        ></div>
+
+        <div id="traits" class="traits">
+          <div class="trait">
+            <div>Wisdom</div>
+            <div id="wisdom-value" class="trait-value">0</div>
+          </div>
+          <div class="trait">
+            <div>Fire</div>
+            <div id="fire-value" class="trait-value">0</div>
+          </div>
+          <div class="trait">
+            <div>Heart</div>
+            <div id="heart-value" class="trait-value">0</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
